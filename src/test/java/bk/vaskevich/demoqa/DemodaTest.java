@@ -2,6 +2,7 @@ package bk.vaskevich.demoqa;
 
 import bk.vaskevich.helpers.Attach;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -11,6 +12,7 @@ import static io.qameta.allure.Allure.step;
 
 public class DemodaTest extends TestBase{
 
+    @Tag("properties")
     @Test
     public void FillFormTest() {
         step("Открываем страницу регистрации", () -> {
