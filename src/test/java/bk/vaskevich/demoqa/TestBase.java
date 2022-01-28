@@ -18,8 +18,8 @@ public class TestBase {
 
         String browser = System.getProperty("browser","");
         String version = System.getProperty("version","");
-        String login = System.getProperty("user","user1");
-        String password = System.getProperty("password","1234");
+        String login = System.getProperty("user","");
+        String password = System.getProperty("password","");
         String remoteUrl = "https://"+login+":"+password+"@selenoid.autotests.cloud/wd/hub";
 
         Configuration.baseUrl = "https://demoqa.com";
@@ -30,6 +30,9 @@ public class TestBase {
         capabilities.setCapability("enableVNC",true);
         capabilities.setCapability("enableVideo",true);
         Configuration.browserCapabilities = capabilities;
+
+        Attach.attachAsText("Browser",browser);
+        Attach.attachAsText("Version",version);
     }
 
     @AfterEach
