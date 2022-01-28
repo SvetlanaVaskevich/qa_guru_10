@@ -34,7 +34,7 @@ public class TestBase {
 
     @AfterEach
     public void addAttachments() {
-        Attach.screenshotAs("Screnchot demoqa");
+        Attach.screenshotAs(System.getProperty("browser","")+" "+System.getProperty("version",""));
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
