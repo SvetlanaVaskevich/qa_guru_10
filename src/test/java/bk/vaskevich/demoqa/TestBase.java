@@ -20,7 +20,7 @@ public class TestBase {
         String version = System.getProperty("version","91");
         String login = System.getProperty("login","user1");
         String password = System.getProperty("password","1234");
-        String remoteUrl = "https://"+login+":"+password+"@selenoid.autotests.cloud/wd/hub";
+        String remoteUrl = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
