@@ -36,7 +36,7 @@ dependencies {
     testImplementation(
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "com.codeborne:selenide:6.2.0"
+            "com.codeborne:selenide:5.25.1"
     )
     testRuntimeOnly (
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion",
