@@ -14,7 +14,7 @@
 *.properties
 
 # Package Files #
-!allure-notifications-3.1.2.jar
+
 *.jar
 *.war
 *.nar
